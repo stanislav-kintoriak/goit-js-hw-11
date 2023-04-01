@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #ffffff;
+    color: #212121;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  p,
+  ul {
+    margin:0;
+    padding: 0;
+  }
+  
+  .btn {
+    cursor: pointer;
+  }
+  
+  .header {  
+    position: fixed;
+  
+    top: 0;
+    left: 0;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+    width: 100%;
+    min-height: 60px;
+  
+    background-color: #0d5478;
+    border-bottom: 1px solid #5c5b5b;
+  }
+  
+  .list {
+    list-style: none;
+  }
+  
+  .search-form {
+    display: flex;
+  
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .search-field {
+    display: block;
+  
+    font: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+  
+    width: 320px;
+    height: 40px;
+  
+    text-align: center;
+  
+    outline: none;
+    border: 2px solid #5e5b5b;
+    border-radius: 6px 0 0 6px;
+  }
+  
+  .search-field:focus {
+    display: flex;
+    border: 2px solid #173b4c;
+  }
+  
+  .search-field:focus::placeholder {
+    color: transparent;
+  }
+  
+  .search-button {
+  
+    width: 80px;
+    height: 40px;
+
+    
+    border: 2px solid #5e5b5b;
+    border-left: 0;
+  
+    border-radius: 0 7px 7px 0;
+  
+     font: inherit;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 5px;
+  
+    cursor: pointer;
+  }
+  
+  .search-btn:hover {
+    background-color: #6da4e3;
+    color: white;
+    border-color: #68b6dd;
+  }
+  
+  .section {
+    padding: 15px 0;
+  }
+  
+  .container {
+    width: 1200px;
+  
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .card-item {
+    flex-basis: calc((100% - 45px) / 4);
+  
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+  
+    overflow: hidden;
+  }
+  
+  .photo-card {
+    width: 100%;
+  }
+  
+  .card-img {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .link {
+    text-decoration: none;
+    color: #212121;
+  }
+  
+  .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    font-size: 12px;
+  }
+  
+  .load-more {
+    display: none;
+    margin-bottom: 20px;
+  }
