@@ -67,12 +67,12 @@ function createMarkup(pictures) {
   // info massages code
 
   if (arrayOfPictures.length === 0) {
-    Notiflix.Notify.failure(
+    Notify.failure(
       'Sorry, there are no images matching your search query. Please try again.'
     );
     return;
   } else if (getPictures.page === 1) {
-    Notiflix.Notify.info(`Hooray! We found ${pictures.data.totalHits} images.`);
+    Notify.info(`Hooray! We found ${pictures.data.totalHits} images.`);
   }
 
   const galleryMarkup = arrayOfPictures
@@ -118,7 +118,7 @@ function createMarkup(pictures) {
   }
 
   function noPictures() {
-    Notiflix.Notify.failure(
+    Notify.failure(
       "We're sorry, but you've reached the end of search results."
     );
 
