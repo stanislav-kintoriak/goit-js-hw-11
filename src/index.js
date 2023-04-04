@@ -18,28 +18,28 @@ export const refs = {
   picturesContainer: document.querySelector('.gallery'),};
 
 
-  const searchBtn = document.querySelector('[type="submit"]');
-  searchBtn.classList.add('search-button');
+  // const searchBtn = document.querySelector('[type="submit"]');
+  // searchBtn.classList.add('search-button');
 
-  const input = document.querySelector('[name="searchQuery"]');
-  input.classList.add('search-field');
+  // const input = document.querySelector('[name="searchQuery"]');
+  // input.classList.add('search-field');
 
 
-  //STATIC MARKUP CREATING
-inputField.classList.add('search-field');
-searchBtn.classList.add('search-btn');
+//   //STATIC MARKUP CREATING
+// inputField.classList.add('search-field');
+// searchBtn.classList.add('search-btn');
 
-const header = document.createElement('header');
-header.classList.add('page-header');
-const section = document.createElement('section');
-section.classList.add('section');
-const container = document.createElement('div');
-container.classList.add('container');
+// const header = document.createElement('header');
+// header.classList.add('page-header');
+// const section = document.createElement('section');
+// section.classList.add('section');
+// const container = document.createElement('div');
+// container.classList.add('container');
 
-body.prepend(header, section);
-header.prepend(refs.searchForm);
-section.prepend(container);
-container.prepend(refs.picturesContainer);
+// body.prepend(header, section);
+// header.prepend(refs.searchForm);
+// section.prepend(container);
+// container.prepend(refs.picturesContainer);
 
 
 
